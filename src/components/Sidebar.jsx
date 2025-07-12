@@ -7,14 +7,13 @@ import { Button } from "./ui/button";
 export default function Sidebar() {
     return (
         <div className="space-y-4 p-4">
-            {/* Header */}
             <div className="flex items-start justify-between rounded-lg border-[1px] p-4  bg-background">
                 <div className="flex items-center space-x-3">
-                     <div className="relative inline-flex items-center justify-center w-16 h-16 rounded-full bg-foreground text-white font-bold text-2xl">
-                            TG
-                            <span className="absolute bottom-[-2px] w-full text-center text-xs font-normal bg-[#392e98] rounded-b-full py-2">Edit</span>
-                            <span className="absolute top-1 -right-1 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></span>
-                        </div>
+                    <div className="relative inline-flex items-center justify-center w-16 h-16 rounded-full bg-foreground text-white font-bold text-2xl">
+                        TG
+                        <span className="absolute bottom-[-2px] w-full text-center text-xs font-normal bg-[#392e98] rounded-b-full py-2">Edit</span>
+                        <span className="absolute top-1 -right-1 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></span>
+                    </div>
                     <div>
                         <div className="font-semibold text-primary">Truck Grear <span className="ml-1 text-xs bg-[#fdf4e9] text-[#e48d21] px-2 py-1 rounded-lg ">BUSINESS</span></div>
                         <div className="text-sm text-gray-500">jillali@onechanneladmin.com</div>
@@ -22,8 +21,6 @@ export default function Sidebar() {
                 </div>
                 <button className="text-xs hover:underline">Change Status</button>
             </div>
-
-            {/* Actions */}
             <div className="grid grid-cols-4 gap-4 text-center border rounded-lg p-4 bg-background">
                 <div className="flex flex-col items-center space-y-1 border-r">
                     <Mail className="w-5 h-5 text-primary" />
@@ -59,7 +56,7 @@ export default function Sidebar() {
                     </div>
                     <div className="border-b pb-2 space-y-2">
                         <label className="text-sm text-primary">Email</label>
-                        <Input placeholder="Email" defaultValue="Jillali@Onechanneladmin.Com"/>
+                        <Input placeholder="Email" defaultValue="Jillali@Onechanneladmin.Com" />
                     </div >
                     <div className="border-b pb-2 space-y-2">
                         <div className="flex items-center justify-between">

@@ -23,7 +23,7 @@ export default function Navbar() {
   };
   return (
     <div className="flex items-center justify-between px-4 py-4 bg-background  border-b">
-      {/* Logo */}
+      {/* Logo Left */}
       <div className="flex items-center space-x-2">
         <img src="/logomark.png" alt="Quotient Logo" className="h-8 w-auto" />
         <h2 className="text-lg font-semibold text-primary">
@@ -31,13 +31,13 @@ export default function Navbar() {
         </h2>
       </div>
 
-      {/* Search */}
+      {/* Search Center */}
       <div className="w-1/3 relative ">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
         <Input placeholder="Search" className="pl-10 bg-background" />
       </div>
 
-      {/* Actions */}
+      {/* Right login Actions */}
       <div className="flex items-center space-x-4">
         <div onClick={toggleTheme} className="cursor-pointer">
           {theme === "light" ? (
@@ -68,7 +68,7 @@ export default function Navbar() {
             <div className="font-medium text-primary">Manoj Sharma</div>
             <div className="text-gray-400 text-sm">Super Admin</div>
           </div>
-          <div className="text-primary cursor-pointer"><ChevronDown className='text-xs'/></div>
+          <div className="text-primary cursor-pointer"><ChevronDown className='text-xs' /></div>
         </div>
       </div>
     </div>

@@ -1,7 +1,6 @@
-import React from "react";
 import { Slot } from "@radix-ui/react-slot";
 
-// Simple cn function replacement since @/lib/utils does not exist
+
 function cn(...classes) {
   return classes.filter(Boolean).join(" ");
 }

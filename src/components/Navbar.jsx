@@ -25,7 +25,7 @@ export default function Navbar() {
     <div className="flex items-center justify-between px-4 py-4 bg-background  border-b">
       {/* Logo */}
       <div className="flex items-center space-x-2">
-        <img src="/logomark.png" alt="Quotient Logo" className="h-8 w-auto" />
+        <img src="/logo.png" alt="Quotient Logo" className="h-8 w-auto" />
         <h2 className="text-lg font-semibold text-primary">
           Quotient
         </h2>

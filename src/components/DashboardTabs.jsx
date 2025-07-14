@@ -62,7 +62,7 @@ export default function DashboardTabs() {
                 ))}
             </div>
 
-            {/* Cards */}
+            {/* Slider*/}
             <div className="">
                 <Slider {...settings}>
                     {cardsData.map((card, index) => (
@@ -106,10 +106,9 @@ export default function DashboardTabs() {
 
             {/* Order Status or Recent Activitics */}
             <div className="grid grid-cols-12 gap-4">
-                {/* Order */}
                 <div className="col-span-12  xl:col-span-6  rounded-lg  bg-primary-foreground border-border border">
                     <div className="rounded-xl p-4 w-full">
-                        {/* Header */}
+
                         <div className="flex justify-between items-center pb-4 border-b border-border">
                             <h2 className="text-lg font-semibold text-primary">Order Status</h2>
                             <div className="flex items-center gap-2">
@@ -124,9 +123,8 @@ export default function DashboardTabs() {
                             </div>
                         </div>
 
-                        {/* Body */}
+
                         <div className="grid grid-cols-12 gap-2 items-center">
-                            {/* Status Grid */}
                             <div className="grid col-span-12 md:col-span-6 lg:col-span-8 xl:col-span-8 gap-2">
                                 <div className="grid grid-cols-2 ">
                                     {[
@@ -137,7 +135,7 @@ export default function DashboardTabs() {
                                         { label: "Delivered", count: 123, icon: <BadgeCheck /> },
                                         { label: "Cancelled", count: 50, icon: <RefreshCwOff /> },
                                     ].map((item, idx) => (
-                                        <div className={`px-5 py-8 flex border-border ${idx < 4 ?"border-b" : 0} ${idx % 2 !== 0 ? "border-l" : ""}`} key={idx}>
+                                        <div className={`px-5 py-8 flex border-border ${idx < 4 ? "border-b" : 0} ${idx % 2 !== 0 ? "border-l" : ""}`} key={idx}>
                                             {item.icon}
                                             <div className="mb-2 text-left pl-1">
                                                 <p className="text-sm text-primary">{item.label}</p>
@@ -148,7 +146,7 @@ export default function DashboardTabs() {
                                 </div>
                             </div>
 
-                            {/* Donut Chart */}
+                            {/* Round Chart */}
                             <div className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-4 relative w-full h-48 flex justify-center items-center">
                                 <Doughnut data={data} options={options} />
                                 <div className="absolute text-xl font-bold text-primary">
@@ -161,8 +159,6 @@ export default function DashboardTabs() {
 
                 {/* Recent */}
                 <div className="col-span-12  xl:col-span-6 rounded-lg  bg-primary-foreground border-border border">
-
-                    {/* Header */}
                     <div className="flex justify-between items-center p-4 border-b">
                         <h2 className="text-lg font-semibold text-primary">Recent Activities</h2>
                         <div className="flex gap-2">
@@ -175,7 +171,6 @@ export default function DashboardTabs() {
                         </div>
                     </div>
 
-                    {/* Body */}
                     <div className="p-4 space-y-4">
                         {activities.map((section, sectionIdx) => (
                             <div key={sectionIdx}>
